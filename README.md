@@ -2,13 +2,14 @@
 
 ### Installation
 
-Python 3.7.7 
+Python 3.7.7
+
 pip 21.0.1
 
 ```pip install -r /path/to/requirements.txt```
 
 
-The path to solve the proposed proyect, in my case was take one step at a time, so lets see each problem by it self.
+The path to solve the proposed project, in my case was take one step at a time, so lets see each problem by it self.
 
 
 ### 1. Calculate the number of lines and the average of the field 'tip_amount':
