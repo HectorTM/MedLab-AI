@@ -13,7 +13,7 @@ The path to solve the proposed proyect, in my case was take one step at a time, 
 
 ### 1. Calculate the number of lines and the average of the field 'tip_amount':
 
-First of all we need to connect with the AWS(Amazon) service, where the data is storaged. To be able to do that, we are going to use the native library Boto3. In this case, we need to extract the information relevant from the URL given, ie bucket and key. Then process the column we are asked for “tip_amount”, trying to have the file  processing as light as we can, since we cannot manage the download process. The first time we are asked for this information, we could keep it in the server, so we dont connect with Amazon again, but seems to be a must in the proyect. Afger we have the file and the data available, I've choosen pandas for the cals since it's a bast extended library, needing the data as dataframe, while is available as  botocore.response.StreamingBody. Once the data is readed (only the column we need), just use the methods panda gives us. 
+First of all we need to connect with the AWS(Amazon) service, where the data is storaged. To be able to do that, we are going to use the native library Boto3. In this case, we need to extract the information relevant from the URL given, ie bucket and key. Then process the column we are asked for ï¿½tip_amountï¿½, trying to have the file  processing as light as we can, since we cannot manage the download process. The first time we are asked for this information, we could keep it in the server, so we dont connect with Amazon again, but seems to be a must in the proyect. Afger we have the file and the data available, I've choosen pandas for the cals since it's a bast extended library, needing the data as dataframe, while is available as  botocore.response.StreamingBody. Once the data is readed (only the column we need), just use the methods panda gives us. 
 
 Perhaps using an algorithm able to calculate mean iteratively, could be faster/lighter, but pandas is so extended that we trust it solution is more than sharped. Remember to hide the sensitive information (accounts/passwords).
 
@@ -25,4 +25,4 @@ This point is way bigger than the before one. In the beginning, we need to choos
 The model could be more accurated, but being arround 90% is close enought to the purposewe are atrying to achive in this case. 
 
 There are a lot of improvements that could be done, some of those are said in the text on top of this, but the proyect is brief and the time was spent on studying and trying to fit as close as posible while being solved straigforward. 
-The file structure is not pointed so an small example of one that could be use is done in the first point.
+The file structure is not pointed so an small example of one that could be use is done but could be improved, just showing how to be done.
