@@ -1,15 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 
-import boto3
-import os
-from dotenv import load_dotenv
-import pandas as pd
-import xgboost as xgb
-
-import pymongo
-from pymongo import MongoClient
-
 from Utils import connection, calcs, utils
 from Model import xgb_model
 
